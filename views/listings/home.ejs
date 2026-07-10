@@ -1,0 +1,40 @@
+<% layout("/layouts/boilerplate") %>
+
+
+<style>
+    .logo{
+        font-family: "Plus Jakarta Sans", serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin:0;
+        background-color: white;
+        overflow: hidden;
+    }
+    .container {
+        text-align: center;
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    h1 {
+        color:#fe424d;
+    }
+</style>
+<body>
+    <div class="container logo">
+        <h1> <b>WonderLust</b></h1>
+    </div>
+</body>
