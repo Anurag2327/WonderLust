@@ -87,7 +87,6 @@ ATLASDB_URL=your_mongodb_connection_string
 SECRET=your_session_secret
 ```
 
-> ⚠️ Never commit your `.env` file or any credentials to GitHub.
 
 ### 4. Run the Application
 
@@ -107,13 +106,6 @@ Visit:
 http://localhost:8080/listings
 ```
 
----
-
-## 📸 Screenshots
-
-> Add screenshots of your Home Page, Listing Details, Login Page, and Create Listing page here.
-
----
 
 ## 🤝 Contributing
 
