@@ -64,9 +64,9 @@ const sessionOptions = {
     }
 }
 
-// app.get("/",(req,res) => {
-//     res.render("./listings/home.ejs")
-// });
+app.get("/",(req,res) => {
+    res.render("./listings/home.ejs")
+});
 
 
 app.use(session(sessionOptions));
