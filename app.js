@@ -64,7 +64,6 @@ const sessionOptions = {
     }
 }
 
-
 app.use(session(sessionOptions));
 app.use(flash());
 
@@ -84,6 +83,7 @@ app.use((req,res,next) =>{
 app.get("/",(req,res) => {
     res.redirect("./listings")
 });
+
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
@@ -101,4 +101,4 @@ app.use((err,req,res,next) =>{
 
 app.listen(8080,()=>{
     console.log("Port 8080 start listening.");
-}) 
+})
