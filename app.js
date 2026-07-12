@@ -64,11 +64,6 @@ const sessionOptions = {
     }
 }
 
-app.get("/",(req,res) => {
-    res.render("./listings/home.ejs")
-});
-
-
 app.use(session(sessionOptions));
 app.use(flash());
 
@@ -85,7 +80,9 @@ app.use((req,res,next) =>{
     next();
 })
 
-
+app.get("/",(req,res) => {
+    res.redirect("./listings")
+});
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
