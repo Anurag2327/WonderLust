@@ -9,7 +9,7 @@ body{
     flex: 1;
 }
 .navbar{
-    height: 5rem;
+    min-height: 5rem;
     background-color: white;
 }
 
@@ -99,4 +99,49 @@ body{
 .show-card{
     padding-left: 0;
     padding-right: 0;
+}
+
+/* mobile responsiveness */
+@media (max-width: 767px) {
+    .navbar-nav {
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar-nav.ms-auto {
+        margin-left: 0 !important;
+        align-items: flex-start;
+    }
+
+    form[role="search"] {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .search-inp {
+        width: 100%;
+        padding: 0.5rem 1.5rem !important;
+    }
+
+    #filters {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 0.5rem;
+    }
+
+    .filter {
+        margin-right: 1.2rem;
+        flex-shrink: 0;
+    }
+
+    .tax-toggle {
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .show-img {
+        height: 25vh;
+    }
 }

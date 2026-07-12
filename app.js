@@ -64,10 +64,7 @@ const sessionOptions = {
     }
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 55a36fa (add category filter and search functionality)
 app.use(session(sessionOptions));
 app.use(flash());
 
@@ -87,10 +84,6 @@ app.use((req,res,next) =>{
 app.get("/",(req,res) => {
     res.redirect("./listings")
 });
-<<<<<<< HEAD
-=======
-
->>>>>>> 55a36fa (add category filter and search functionality)
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
